@@ -1,0 +1,82 @@
+.header {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #222b2e;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 400px;
+    height: 250px;
+    border: 5px solid #38f9d7;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #43e97b;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.container:hover {
+    animation-play-state: paused;
+}
+
+.image {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+@keyframes example {
+    0%{
+        background-color: #ffcc00;
+        left: 0px;
+        top: 0px;
+    }
+    20%{
+        background-color: yellow;
+        left: 200px;
+        top: 200px;
+    }
+    40%{
+        background-color: #ff69b4;
+        left: 200px;
+        top: 0px;
+    }
+    60%{
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    80%{
+        background-color: purple;
+        left: 0px;
+        top: 0px;
+    }
+    100%{
+        background-color: orange;
+        left: 200px;
+        top: 0px;
+    }
+}
+
+footer {
+    background-color: #222b2e;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
